@@ -1,0 +1,97 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red43\green43\blue43;}
+{\*\expandedcolortbl;;\cssrgb\c22353\c22353\c22353;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww37620\viewh14800\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \expnd0\expndtw0\kerning0
+\
+!pip install pyspark==2.4.5\
+\
+from pyspark.sql.types import StructType, StructField, IntegerType\
+\
+# Input Data Set is uploaded in my git repository\
+!git clone https://github.com/spribylova/Coursera_IBM_Watson\
+    \
+# View all datasets avaialble in the repository, I use csv format for file\
+! ls Coursera_IBM_Watson\
+\
+# Creating schema with 3 columns as per data\
+schema = StructType(\{\
+    StructField('x', IntegerType(), True),\
+    StructField('y', IntegerType(), True),\
+    StructField('z', IntegerType(), True),\
+\})\
+\
+\
+# Import relevant library to help with datapreprocessing\
+import os\
+\
+# get list of folders/files in folder HMP_Dataset\
+file_list = os.listdir('Coursera_IBM_Watson')\
+file_list\
+\
+import pandas as pd\
+\
+!pip install pandas\
+\
+from io import StringIO\
+\
+file_list = os.listdir('Coursera_IBM_Watson')\
+file_list\
+\
+pd.read_csv('Coursera_IBM_Watson/Data_IBM_Watson.csv').dtypes\
+\
+pd.read_csv('Coursera_IBM_Watson/Data_IBM_Watson.csv')\
+\
+INPUT missing values for the case of Coffee Data\
+For Coursera excercises and ETL IBM Watson has been used, but due to monthly free limit approaching, Jupyter Notebooks are used for all remaining Python codes and methods\
+(https://hub.gke2.mybinder.org/user/jupyterlab-jupyterlab-demo-9b4niaon/lab )\
+\
+df.head()\
+\
+df.isnull().sum()\
+\
+# Replace using median, various Missing values imputation methodologies are ffill, bfill, pad, \'85\
+\
+median = df['Emp_count'].median()\
+df['Emp_count'].fillna(median, inplace=True)\
+\
+median = df['Sales\'92].median()\
+df['Sales'].fillna(median, inplace=True)\'a0\
+\
+median = df['KW_search'].median()\
+df['KW_search'].fillna(median, inplace=True)\
+\
+median = df['FB_likes'].median()\
+df['FB_likes'].fillna(median, inplace=True)\
+\
+median = df['Impressions'].median()\
+df['Impressions'].fillna(median, inplace=True)\
+\
+median = df['Visits'].median()\
+df['Visits'].fillna(median, inplace=True)\'a0\
+\
+median = df['Value_visitor'].median()\
+df['Value_visitor'].fillna(median, inplace=True)\
+\
+median = df['Value'].median()\
+df['Value'].fillna(median, inplace=True)\
+\
+median = df[\'91Links\'92].median()\
+df['Links\'92].fillna(median, inplace=True)\'a0\
+\
+median = df['Site_count'].median()\
+df['Site_count'].fillna(median, inplace=True)\
+\
+median = df['Capital'].median()\
+df['Capital'].fillna(median, inplace=True)\
+\
+\
+\
+\
+\
+df\
+}
