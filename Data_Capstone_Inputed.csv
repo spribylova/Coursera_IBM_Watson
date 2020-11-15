@@ -1,0 +1,89 @@
+,,,,,,,,,,,,,,,,,,,,,,
+,,UID,Category,KW,Web,Emp_count,Sales,Note,KW_search,FB_likes,FB,...,Impressions,Visits,Value_visitor,Value,Links,Site_count,Capital,Headquarter,City,Registered
+,0,CHE-195.596.773,Herstellung von Getranken,Adrianos,https://www.adrianos.ch,9.0,1000000.0,2016 Dezember,5.0,1321.0,Y,...,300.0,300.0,1.160,818.0,95.0,22350.0,100000.0,Switzerland,Bern,2008.0
+,1,CHE-109.442.971,Herstellung von Getranken,Badilatti,http://www.cafe-badilatti.ch,19.0,10000000.0,2016 Juli,39.0,263.0,Y,...,8732.0,1176.0,1.080,1710.0,80.0,25050.0,630000.0,Switzerland,Zuoz,2002.0
+,2,CHE-350.334.433,Herstellung/Verarbeitung von Lebensmitteln,Bertschi,http://www.bertschi-cafe.ch,3.0,10000000.0,2016 Juli,39.0,828.0,Y,...,300.0,300.0,0.210,614.0,38.0,1425.0,200000.0,Switzerland,Birsfelden,2013.0
+,3,CHE-362.413.335,Herstellung von Getranken,Black and Blaze,http://www.blackandblaze.com,17.0,10000000.0,NaN,0.0,835.0,Y,...,265.0,300.0,0.455,899.0,38.0,855.0,100000.0,Switzerland,Ebmatingen,2016.0
+,4,CHE-362.510.257,Herstellung von Getranken,Blaser cafee,http://www.blasercafe.ch,99.0,10000000.0,2016 August,34.0,6824.0,Y,...,491.0,491.0,0.470,1075.0,155.0,13935.0,500000.0,Switzerland,Bern,2012.0
+,5,NaN,NaN,Bohnus,http://www.bohnus.ch,17.0,10000000.0,NaN,0.0,1418.0,NaN,...,300.0,300.0,0.455,660.0,6.0,210.0,200000.0,Switzerland,Bunzen,NaN
+,6,NaN,NaN,Cafedumonde,http://www.caffepippo.ch,17.0,10000000.0,NaN,29.0,1418.0,NaN,...,300.0,300.0,0.455,735.0,2.0,30.0,200000.0,Switzerland,Chur,NaN
+,7,CHE-107.856.327,Delica,Cafee pippo,https://ch.cafe-royal.com,17.0,10000000.0,NaN,20.0,1418.0,N,...,130977.0,31637.0,2.160,24642.0,130.0,57300.0,200000.0,Switzerland,Birsfelden,1955.0
+,8,NaN,NaN,Cafee Royal,http://www.cafedumonde.ch,17.0,10000000.0,NaN,0.0,146.0,Y,...,1058.0,529.0,0.600,1231.0,2.0,3547.5,200000.0,Switzerland,Courchapoix,NaN
+,9,CHE-109.863.321,Tee/Kaffee/Kakao,Caferos,http://caferos.com,9.0,10000000.0,2016 Juli,0.0,465.0,Y,...,358.0,314.0,0.455,971.0,34.0,3547.5,350000.0,Switzerland,Feusisberg,2006.0
+,10,CHE-338.550.279,Herstellung von Getranken,Cafethek,http://www.cafethek.ch,3.0,1000000.0,2016 Juli,0.0,1418.0,N,...,300.0,300.0,0.455,675.0,8.0,540.0,200000.0,Switzerland,Wabern,2011.0
+,11,NaN,NaN,Capra cafee,NaN,17.0,10000000.0,NaN,7.0,1418.0,NaN,...,358.0,314.0,0.455,971.0,34.0,3547.5,200000.0,Switzerland,NaN,NaN
+,12,NaN,NaN,Carlito,http://www.caffecarlito.ch,17.0,10000000.0,NaN,27.0,1418.0,NaN,...,300.0,300.0,0.455,750.0,17.0,30.0,200000.0,Switzerland,Zandone,1965.0
+,13,CHE-110.588.624,Handel mit Produkten fur Haus/Wohnen,Carluccio,https://www.caffecarluccio.ch,3.0,10000000.0,2016 Juli,49.0,1418.0,N,...,300.0,300.0,0.600,765.0,6.0,165.0,20000.0,Switzerland,Gumligen,2004.0
+,14,NaN,NaN,Caruso,https://kaffee.migros.ch/de/produkte/marken/ca...,17.0,10000000.0,NaN,40.0,1418.0,NaN,...,358.0,314.0,0.455,971.0,34.0,3547.5,200000.0,Switzerland,Chur,NaN
+,15,CHE-115.200.301,Tee/Kaffee/Kakao,Casablanca,http://kaffeecasablanca.ch,9.0,10000000.0,2016 August,18.0,1418.0,NaN,...,300.0,300.0,0.455,713.0,8.0,195.0,100000.0,Switzerland,Allschwil,2009.0
+,16,NaN,NaN,Cervino,http://www.caffe-cervino.ch,17.0,10000000.0,NaN,4.0,1418.0,NaN,...,300.0,300.0,1.410,578.0,2.0,465.0,200000.0,Switzerland,Naters,1986.0
+,17,CHE-112.632.710,Herstellung von Getranken,Chicco d oro,http://chiccodoro.com/lang-en/,199.0,20000000.0,2016 Juli,20.0,3766.0,Y,...,28350.0,1942.0,0.440,2286.0,359.0,31200.0,900000.0,Switzerland,Balerna,2005.0
+,18,CHE-105.847.300,Detailhandel/Grosshandel/Vertrieb,Claro,https://www.claro.ch,49.0,20000000.0,2016 August,36.0,127876.0,Y,...,8467.0,1002.0,0.950,1361.0,237.0,105750.0,4710612.0,Switzerland,Orpund,1989.0
+,19,CHE-109.029.938,Verb_nde/Vereine,Coop at home,https://www.coopathome.ch,80000.0,500000000.0,2016 ovember,41.0,236198.0,Y,...,589397.0,115705.0,0.140,87819.0,512.0,121500.0,200000.0,Switzerland,Basel,1969.0
+,20,CHE-107.856.327,Delica,Cremesso,http://www.cremesso.com,17.0,10000000.0,NaN,5.0,8504.0,Y,...,300.0,300.0,0.455,766.0,34.0,3547.5,200000.0,Switzerland,Birsfelden,2004.0
+,21,NaN,NaN,Cuendet,NaN,17.0,10000000.0,NaN,16.0,1418.0,NaN,...,358.0,314.0,0.455,971.0,34.0,3547.5,200000.0,Switzerland,NaN,NaN
+,22,CHE-105.737.893,Detailhandel/Grosshandel/Vertrieb,Dallmayr,http://www.dallmayr.ch,499.0,20000000.0,2016 August,27.0,9062.0,Y,...,10319.0,1056.0,0.120,1537.0,34.0,46800.0,400000.0,Switzerland,Barbengo,1968.0
+,23,CHE-107.856.327,Herstellung von Getranken,Delica AG,http://www.delica.ch,1391.0,300000000.0,2016 ovember,20.0,175.0,Y,...,1588.0,277.0,0.130,1049.0,76.0,26850.0,1000000.0,Switzerland,Birsfelden,1964.0
+,24,CHE-107.856.327,Delica,Delizio,https://www.delizio.ch/de,17.0,10000000.0,NaN,48.0,7344.0,Y,...,10584.0,2986.0,0.460,3010.0,48.0,24000.0,200000.0,Switzerland,Birsfelden,2004.0
+,25,CHE-105.904.292,Detailhandel/Grosshandel/Vertrieb,Denner,https://www.denner.ch/de/,1000.0,500000000.0,2016 Dezember,42.0,60259.0,Y,...,266320.0,147885.0,0.440,111827.0,594.0,375000.0,15000000.0,Switzerland,Zurich,1944.0
+,26,CHE-439.174.765,Herstellung von Getranken,Derkaffee,http://www.derkaffee.ch,9.0,1000000.0,2016 Juli,0.0,60.0,Y,...,2137.0,2137.0,0.740,2275.0,23.0,6150.0,20000.0,Switzerland,Wynigen,2012.0
+,27,CHE-465.653.385,Tee/Kaffee/Kakao,Destas,https://www.destascoffee.ch,9.0,100000.0,2016 Juli,0.0,7995.0,Y,...,3175.0,529.0,0.455,1238.0,11.0,225.0,100000.0,Switzerland,Opfikon,2012.0
+,28,CHE-364.997.982,Tee/Kaffee/Kakao,Dongeorge,http://www.dongeorge.ch,17.0,10000000.0,NaN,0.0,1418.0,N,...,300.0,300.0,0.455,584.0,6.0,1275.0,100000.0,Switzerland,Untervaz,2012.0
+,29,CHE-100.139.986,Herstellung von Getranken,Drei herzen,http://www.dreiherzen.ch,17.0,10000000.0,NaN,0.0,658.0,Y,...,358.0,314.0,0.455,971.0,34.0,3547.5,100000.0,Switzerland,Einsiedeln,1991.0
+,...,...,...,...,...,...,...,...,...,...,...,...,...,...,...,...,...,...,...,...,...,...
+,68,CHE-404.470.140,Tee/Kaffee/Kakao,Montepeque,http://www.cafemontepeque.com,9.0,10000000.0,NaN,0.0,1418.0,Y,...,358.0,314.0,0.455,971.0,34.0,3547.5,200000.0,Switzerland,Effretikon,2014.0
+,69,CHE-101.237.723,Nestle SA,Nescafe,https://www.nescafe.ch,17.0,10000000.0,NaN,13.0,34655614.0,Y,...,1193.0,1193.0,0.340,1556.0,55.0,23700.0,200000.0,Switzerland,Vevey,1938.0
+,70,CHE-106.014.627,Unternehmens-/Wirtschaftsberatung,Nespresso,https://www.nespresso.ch,12000.0,500000000.0,2016 Dezember,58.0,5693102.0,Y,...,23634072.0,1416277.0,0.080,1060000.0,9379.0,3547.5,2000000.0,Switzerland,Lausanne,1947.0
+,71,CHE-112.254.157,Sonstiger ahrungsmittel-/Lebensmittelhandel,Original food,http://www.originalfood.ch,3.0,1000000.0,2016 Juli,0.0,44.0,Y,...,300.0,300.0,0.210,585.0,34.0,660.0,20000.0,Switzerland,Hergiswil,2005.0
+,72,CHE-110.518.026,Herstellung von Getranken,Pausa kaffee,www.pausacaffe.ch,9.0,1000000.0,2016 Juli,0.0,1418.0,N,...,300.0,300.0,1.720,758.0,21.0,1185.0,20000.0,Switzerland,Rivera,2004.0
+,73,NaN,NaN,Quarta caffe,http://www.quartacaffe.com/en/,17.0,10000000.0,NaN,0.0,1418.0,NaN,...,358.0,358.0,0.410,883.0,101.0,1230.0,200000.0,Italy,Lecce,NaN
+,74,NaN,NaN,Radical beans,http://www.radicalbeans.ch,17.0,10000000.0,NaN,0.0,1418.0,NaN,...,300.0,300.0,0.455,743.0,15.0,255.0,200000.0,Switzerland,NaN,1997.0
+,75,CHE-102.368.492,UCC,Raygil,http://www.raygil.ch,15.0,10000000.0,NaN,0.0,1418.0,N,...,300.0,300.0,1.080,623.0,44.0,840.0,200000.0,Switzerland,Baulmes-s/Yverdon,1964.0
+,76,NaN,NaN,Rebel Dia,http://www.chiapas.ch/cafe1.php,17.0,10000000.0,NaN,7.0,1418.0,NaN,...,358.0,314.0,0.455,971.0,34.0,3547.5,200000.0,Switzerland,NaN,NaN
+,77,NaN,NaN,Ricklis,https://www.ricklis.ch,17.0,10000000.0,NaN,0.0,1418.0,NaN,...,300.0,300.0,0.455,705.0,34.0,3547.5,200000.0,Switzerland,NaN,NaN
+,78,NaN,NaN,roasters,https://www.roasters.ch,17.0,10000000.0,NaN,20.0,1418.0,NaN,...,358.0,314.0,0.455,971.0,34.0,3547.5,200000.0,Switzerland,NaN,NaN
+,79,NaN,NaN,Roestgrad,http://www.roestgrad.ch,17.0,10000000.0,NaN,0.0,1418.0,NaN,...,358.0,314.0,0.455,971.0,34.0,3547.5,200000.0,Switzerland,NaN,NaN
+,80,CHE-102.368.492,UCC,Rosca,http://www.rosca.ch,9.0,10000000.0,NaN,15.0,1418.0,N,...,300.0,300.0,0.270,825.0,29.0,16050.0,200000.0,Switzerland,Sursee,1954.0
+,81,CHE-101.272.352,Herstellung von pharmazeutischen Produkten,Saprochi,http://www.saprochi.ch,49.0,100000000.0,2016 August,0.0,1418.0,N,...,300.0,300.0,0.200,720.0,13.0,75.0,335000.0,Switzerland,Gland,1935.0
+,82,NaN,NaN,Schweitzer bio cafee,NaN,17.0,10000000.0,NaN,0.0,1418.0,NaN,...,358.0,314.0,0.455,971.0,34.0,3547.5,200000.0,Switzerland,NaN,NaN
+,83,CHE-102.368.492,UCC,Sima,http://www.simakaffee.ch,5.0,10000000.0,NaN,12.0,1418.0,N,...,300.0,300.0,0.455,690.0,13.0,720.0,200000.0,Switzerland,Trimmis,1969.0
+,84,CHE-107.293.335,Herstellung von Getranken,Sirocco,http://www.sirocco.ch,20.0,10000000.0,2016 Juli,37.0,4660.0,Y,...,14818.0,2299.0,0.350,2472.0,76.0,60300.0,1000000.0,Switzerland,Schmerikon,1941.0
+,85,NaN,Valora,Spettacolo,http://spettacolo.ch/de/index.php,17.0,10000000.0,NaN,33.0,11376.0,Y,...,300.0,300.0,0.455,569.0,8.0,300.0,200000.0,Switzerland,Muttenz,1992.0
+,86,CHE-103.278.590,Herstellung von Getranken,Spielhof,http://www.spielhofkaffee.ch,17.0,10000000.0,NaN,4.0,1418.0,N,...,300.0,300.0,1.500,765.0,11.0,420.0,200000.0,Switzerland,Glarus,1973.0
+,87,CHE-100.839.196,Bar/Pub,starbucks ch,http://www.starbucks.ch,1000.0,200000.0,2016 Juli,75.0,69.0,Y,...,52920.0,32326.0,0.110,24890.0,290.0,41100.0,2000000.0,Switzerland,Volketswil,2000.0
+,88,CHE-115.056.576,Herstellung von Getranken,Stoll,http://stoll-kaffee.ch,19.0,10000000.0,2016 Juli,56.0,1079.0,Y,...,548.0,548.0,1.300,1252.0,44.0,5640.0,100000.0,Switzerland,Zurich,1936.0
+,89,CHE-293.158.291,JDE,Tassimo,https://www.tassimo.ch,17.0,10000000.0,NaN,50.0,1168000.0,Y,...,5852.0,5852.0,0.460,5015.0,25.0,11985.0,200000.0,Switzerland,Zug,2015.0
+,90,NaN,NaN,Terre des Hommes,NaN,17.0,10000000.0,NaN,3.0,1418.0,NaN,...,358.0,314.0,0.455,971.0,34.0,3547.5,200000.0,Switzerland,NaN,NaN
+,91,CHE-107.024.232,Herstellung von Getranken,Trottet,https://www.trottet.ch,49.0,20000000.0,2016 August,2.0,4121.0,Y,...,33075.0,2216.0,0.450,2326.0,34.0,27900.0,200000.0,Switzerland,Geneve,1951.0
+,92,NaN,NaN,Turm,https://turmkaffee.ch,17.0,10000000.0,NaN,15.0,1418.0,NaN,...,11246.0,1105.0,1.200,1686.0,63.0,12240.0,200000.0,Switzerland,St. Gallen,1761.0
+,93,CHE-102.368.492,Herstellung von Getranken,UCC,http://www.ucc-coffee.ch/de,9.0,20000000.0,2016 September,17.0,655.0,Y,...,528.0,528.0,0.455,1260.0,11.0,300.0,100000.0,Switzerland,Zollikofen,1933.0
+,94,NaN,NaN,Valmandin,http://www.valmandin.ch,17.0,10000000.0,NaN,0.0,75.0,Y,...,358.0,314.0,0.455,971.0,34.0,3547.5,200000.0,Switzerland,Geneve,NaN
+,95,NaN,NaN,Vescovi,http://www.wedlkaffee.com/marken/vescovi/,17.0,10000000.0,NaN,0.0,1418.0,NaN,...,358.0,314.0,0.455,971.0,34.0,3547.5,200000.0,Italy,Padua,1904.0
+,96,NaN,NaN,Vitali,http://www.caffeista.com,17.0,10000000.0,NaN,24.0,1418.0,NaN,...,300.0,300.0,0.455,608.0,15.0,1260.0,200000.0,Switzerland,Zurich,NaN
+,97,CHE-105.854.263,Sonstiger ahrungsmittel-/Lebensmittelhandel,Volg,www.volg.ch,1000.0,500000000.0,2016 ovember,44.0,1418.0,N,...,36515.0,18586.0,0.130,14717.0,393.0,117300.0,20000000.0,Switzerland,Winterthur,1972.0
+,98 rows × 21 columns,,,,,,,,,,,,,,,,,,,,,
+,"
+",,,,,,,,,,,,,,,,,,,,,
+,"
+
+
+",,,,,,,,,,,,,,,,,,,,,
+,[ ]:,,,,,,,,,,,,,,,,,,,,,
+,"
+",,,,,,,,,,,,,,,,,,,,,
+,"
+
+
+
+",,,,,,,,,,,,,,,,,,,,,
+, ,,,,,,,,,,,,,,,,,,,,,
+,"
+",,,,,,,,,,,,,,,,,,,,,
+,​,,,,,,,,,,,,,,,,,,,,,
+,"
+
+",,,,,,,,,,,,,,,,,,,,,
+,"
+
+
+",,,,,,,,,,,,,,,,,,,,,
