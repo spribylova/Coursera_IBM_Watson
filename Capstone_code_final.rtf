@@ -1,0 +1,183 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red43\green43\blue43;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c22353\c22353\c22353;\cssrgb\c100000\c100000\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww27080\viewh15900\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\
+# ETL - Load the file , transform the file and store the file\
+# Install Apache Spark\
+\
+!pip install tensorflow\
+!pip install pyspark==2.4.5\
+import pandas as pd\
+import numpy as np\
+import tensorflow as tf\
+from tf import keras\
+from tf.keras import layers\
+from pathlib import Path\
+import matplotlib.pyplot as plt\
+from pyspark.sql.types import StructType, StructField, IntegerType\
+import os\
+from io import StringIO\
+\
+# Input Data Set is uploaded in git repository\
+!git clone https://github.com/spribylova/Coursera_IBM_Watson\
+    \
+# View all datasets avaialble in the repository, I use csv format for file\
+! ls Coursera_IBM_Watson\
+\
+# get list of folders/files in folder HMP_Dataset\
+file_list = os.listdir('Coursera_IBM_Watson')\
+file_list\
+\
+\
+file_list = os.listdir('Coursera_IBM_Watson')\
+file_list\
+\
+\
+pd.read_csv('Coursera_IBM_Watson/Data_IBM_Watson.csv').dtypes\
+pd.read_csv('Coursera_IBM_Watson/Data_IBM_Watson.csv')\
+\
+\
+\
+\
+# Replace missing values using median (various Missing values imputation methodologies are ffill, bfill, pad, \'85 )\
+\
+\
+df.head()\
+\
+df.isnull().sum()\
+\
+\
+median = df['Emp_count'].median()\
+df['Emp_count'].fillna(median, inplace=True)\
+\
+median = df['Sales\'92].median()\
+df['Sales'].fillna(median, inplace=True)\'a0\
+\
+median = df['KW_search'].median()\
+df['KW_search'].fillna(median, inplace=True)\
+\
+median = df['FB_likes'].median()\
+df['FB_likes'].fillna(median, inplace=True)\
+\
+median = df['Impressions'].median()\
+df['Impressions'].fillna(median, inplace=True)\
+\
+median = df['Visits'].median()\
+df['Visits'].fillna(median, inplace=True)\'a0\
+\
+median = df['Value_visitor'].median()\
+df['Value_visitor'].fillna(median, inplace=True)\
+\
+median = df['Value'].median()\
+df['Value'].fillna(median, inplace=True)\
+\
+median = df[\'91Links\'92].median()\
+df['Links\'92].fillna(median, inplace=True)\'a0\
+\
+median = df['Site_count'].median()\
+df['Site_count'].fillna(median, inplace=True)\
+\
+median = df['Capital'].median()\
+df['Capital'].fillna(median, inplace=True)\
+\
+\
+\
+\
+# features are formatted as a single vector. So the first stage of this workflow is the VectorAssembler\
+from pyspark.ml.feature import VectorAssembler\
+feature_list = []\
+for col in df.columns:\
+    if col == 'label':\
+        continue\
+    else:\
+        feature_list.append(col)\
+\
+assembler = VectorAssembler(inputCols=feature_list, outputCol="features")\
+\
+\
+# The only inputs for the Random Forest model are the label and features. Parameters are assigned in the tuning piece.\
+from pyspark.ml.regression import RandomForestRegressor\
+rf = RandomForestRegressor(labelCol="label", featuresCol="features")\
+\
+\
+# we put our simple, two-stage workflow into an ML pipeline.\
+from pyspark.ml import Pipeline\
+pipeline = Pipeline(stages=[assembler, rf])\
+\
+\
+# To evaluate our model and the corresponding \'93grid\'94 of parameter variables\
+from pyspark.ml.tuning import ParamGridBuilder\
+import numpy as np\
+\
+paramGrid = ParamGridBuilder() \\\
+    .addGrid(rf.numTrees, [int(x) for x in np.linspace(start = 10, stop = 50, num = 3)]) \\\
+    .addGrid(rf.maxDepth, [int(x) for x in np.linspace(start = 5, stop = 25, num = 3)]) \\\
+    .build()\
+\
+\
+\
+# assign the estimator argument,  estimatorParamMaps argument,  evaluator argument\
+from pyspark.ml.tuning import CrossValidator\
+from pyspark.ml.evaluation import RegressionEvaluator\
+\
+crossval = CrossValidator(estimator=pipeline,\
+                          estimatorParamMaps=paramGrid,\
+                          evaluator=RegressionEvaluator(),\
+                          numFolds=3)\
+\
+\
+# run model\
+(trainingData, testData) = df.randomSplit([0.8, 0.2])\
+cvModel = crossval.fit(trainingData)\
+predictions = cvModel.transform(testData)\
+\
+# evaluate\
+\
+import matplotlib.pyplot as plt\
+\
+evaluator = RegressionEvaluator(labelCol="label", predictionCol="prediction", metricName="rmse")\
+\
+rmse = evaluator.evaluate(predictions)\
+\
+rfPred = cvModel.transform(df)\
+\
+rfResult = rfPred.toPandas()\
+\
+plt.plot(rfResult.label, rfResult.prediction, 'bo')\
+plt.xlabel('Price')\
+plt.ylabel('Prediction')\
+plt.suptitle("Model Performance RMSE: %f" % rmse)\
+plt.show()\
+\
+\
+\
+# feature importance\
+bestPipeline = cvModel.bestModel\
+bestModel = bestPipeline.stages[1]\
+\
+importances = bestModel.featureImportances\
+\
+x_values = list(range(len(importances)))\
+\
+plt.bar(x_values, importances, orientation = 'vertical')\
+plt.xticks(x_values, feature_list, rotation=40)\
+plt.ylabel('Importance')\
+plt.xlabel('Feature')\
+plt.title('Feature Importances')\
+\
+\
+\
+# best parameters\
+print('numTrees - ', bestModel.getNumTrees)\
+print('maxDepth - ', bestModel.getOrDefault('maxDepth'))\
+\
+\
+\
+\
+}
