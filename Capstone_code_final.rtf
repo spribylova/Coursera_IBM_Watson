@@ -35,9 +35,6 @@ file_list = os.listdir('Coursera_IBM_Watson')\
 file_list\
 \
 \
-file_list = os.listdir('Coursera_IBM_Watson')\
-file_list\
-\
 \
 pd.read_csv('Coursera_IBM_Watson/Data_IBM_Watson.csv').dtypes\
 pd.read_csv('Coursera_IBM_Watson/Data_IBM_Watson.csv')\
@@ -47,10 +44,35 @@ pd.read_csv('Coursera_IBM_Watson/Data_IBM_Watson.csv')\
 \
 # Replace missing values using median (various Missing values imputation methodologies are ffill, bfill, pad, \'85 )\
 \
-\
+df = pd.read_csv('Coursera_IBM_Watson/Data_IBM_Watson.csv')\
 df.head()\
 \
 df.isnull().sum()\
+\
+UID              31\
+Category         30\
+KW                0\
+Web               7\
+Emp_count        50\
+Sales            56\
+Note             55\
+KW_search         3\
+FB_likes         51\
+FB               29\
+Position_CH      23\
+Impressions      23\
+Visits           23\
+Value_visitor    44\
+Value            23\
+Links            25\
+Site_count       30\
+Capital          55\
+Headquarter       0\
+City             18\
+Registered       22\
+dtype: int64\
+\
+\
 \
 \
 median = df['Emp_count'].median()\
@@ -77,8 +99,8 @@ df['Value_visitor'].fillna(median, inplace=True)\
 median = df['Value'].median()\
 df['Value'].fillna(median, inplace=True)\
 \
-median = df[\'91Links\'92].median()\
-df['Links\'92].fillna(median, inplace=True)\'a0\
+median = df['Links'].median()\
+df['Links'].fillna(median, inplace=True)\'a0\
 \
 median = df['Site_count'].median()\
 df['Site_count'].fillna(median, inplace=True)\
@@ -88,8 +110,23 @@ df['Capital'].fillna(median, inplace=True)\
 \
 \
 \
+df_inputed=df\
+\
+\
+# provide descriptive statistics\
+\
+df_inputed.describe()\
+df=df_inputed\
+\
+# initialize spark context\
+\
+from pyspark import SparkContext as sc\
+\
+\
+\
 \
 # features are formatted as a single vector. So the first stage of this workflow is the VectorAssembler\
+\
 from pyspark.ml.feature import VectorAssembler\
 feature_list = []\
 for col in df.columns:\
@@ -112,6 +149,7 @@ pipeline = Pipeline(stages=[assembler, rf])\
 \
 \
 # To evaluate our model and the corresponding \'93grid\'94 of parameter variables\
+\
 from pyspark.ml.tuning import ParamGridBuilder\
 import numpy as np\
 \
